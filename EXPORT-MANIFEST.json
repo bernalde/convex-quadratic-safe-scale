@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "package": "quadratic-safe-scale",
+  "status": "SUBMISSION_CANDIDATE_WITH_PINNED_FULL_PREFLIGHT_CALLER_NOT_EXECUTED",
+  "original_clean_export_commit": "69e243169d4eec7c6cf404cbe351c92c6aeeeac9",
+  "files": [
+    {
+      "path": ".github/workflows/palomar-preflight.yml",
+      "sha256": "47b4a4fcd27b4a8068f08f23e0c15bc3eb38e20da1f6cb3b06abd96c3db57099",
+      "bytes": 836
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "94a3666e7596db603645ec7eaa358b92ede245882a9f3a600eaa57f1ea69b1b0",
+      "bytes": 42
+    },
+    {
+      "path": "AxiomAudit.lean",
+      "sha256": "25ed04bc60738dba60b1b120d35fff7923cdbaa49bdff4dedcd837fd3fc040ba",
+      "bytes": 72
+    },
+    {
+      "path": "Challenge.lean",
+      "sha256": "9983760d7ec1ac0ad78e765cc4ff8e331c1fc7e829335d145a077a42f8933a29",
+      "bytes": 2944
+    },
+    {
+      "path": "Chapter02.lean",
+      "sha256": "3019ef1caad4ab531143bd937fae56812bb9959a658bbe7368b5d5c761cc08af",
+      "bytes": 11829
+    },
+    {
+      "path": "Chapter05.lean",
+      "sha256": "28d89d36da70231a2ae011646a221392b6ee1b420515c8967a8951010f1a9919",
+      "bytes": 3721
+    },
+    {
+      "path": "Chapter05QuadraticAnalytic.lean",
+      "sha256": "f84d2cb73536b750d23f3969b3bff950ed0c1515586ca534566744780d55f5a9",
+      "bytes": 5947
+    },
+    {
+      "path": "Chapter05QuadraticScale.lean",
+      "sha256": "f86bf9075efc68b4f6b0c5826d98b2cdb09ab9327e7138cfd626d47dce4dbb0c",
+      "bytes": 5515
+    },
+    {
+      "path": "EXACT-STATEMENT-NOTES.md",
+      "sha256": "e6ab678cac5036bce3385b8c098d3fa2ef72f84de6ea54f6748b1420b2981333",
+      "bytes": 933
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "414140b8d725976f1287ae8b6b8accc1c7db13325af21d00edd2dde49f0dc30a",
+      "bytes": 1204
+    },
+    {
+      "path": "PREPARATION.md",
+      "sha256": "29558c21dc943ebf9f6de063c73841f30e636aa61fed9fe42553533e22aeca68",
+      "bytes": 1351
+    },
+    {
+      "path": "PROVENANCE.json",
+      "sha256": "3bda52404e43419cf401120229d406872c59469a08f3c0fb31aca35d631a6e76",
+      "bytes": 2567
+    },
+    {
+      "path": "README.md",
+      "sha256": "24907de6ae46a39ecd330ada19078255814ddc832d16902428b4fba64d3283de",
+      "bytes": 3165
+    },
+    {
+      "path": "RELEASE-STATUS.md",
+      "sha256": "3d2efb96aad9eda3f306e583957d14759e676b4fd95f132ae6c08f693653ec9c",
+      "bytes": 1169
+    },
+    {
+      "path": "Solution.lean",
+      "sha256": "2ca959934eb61d54aa456757808336d550547f2d78e7a281681bd390132a2400",
+      "bytes": 935
+    },
+    {
+      "path": "VERIFICATION.json",
+      "sha256": "ebc2ffdd8ff45395b1bd9aa1b068eb3066eb3d809dec1ce2b5d9e60658421f15",
+      "bytes": 3668
+    },
+    {
+      "path": "comparator.json",
+      "sha256": "3d8eb47b9782bd2425298810888bc8dc36e4f6a7ed7f8cd5f8850ee98b210145",
+      "bytes": 240
+    },
+    {
+      "path": "formalization.yaml",
+      "sha256": "fadd3ec59e126e386fde7df7181e193ebdddd70272ee25c6c283563befd2374b",
+      "bytes": 5687
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "3625bd628d263c9f6ebd1d5476d07a11af20bed1f1eeca244091b0750c5df71f",
+      "bytes": 3552
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "79e1bb1588fa043cc84a06cce57d82d177dd86cc5e2ae38b70c3a5cf3e48c2cc",
+      "bytes": 457
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25
+    },
+    {
+      "path": "scripts/LICENSE-PalomarTemplate",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "scripts/NOTICE-PalomarTemplate.md",
+      "sha256": "bbc0390a4aae18471282961c2c74a459501be55e649a5394cf0860b52e110d9c",
+      "bytes": 352
+    },
+    {
+      "path": "scripts/check-lean-sources.py",
+      "sha256": "6919911f9905fcc9f01cac96e8c98a348a192a5550a10d127b0b3ced2d74bc5a",
+      "bytes": 4057
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha256": "0dd8fa9c84678a5562442001a390e66ee16e116ef161112c506471bc0828b65e",
+      "bytes": 4268
+    }
+  ],
+  "excluded": [
+    ".git/ and parent history",
+    ".lake/ and dependencies/build objects",
+    "thesis/article assets",
+    "raw private audit/reviewer/correspondence records"
+  ],
+  "schema_validation": "NOT_RUN_FOR_REFRESHED_METADATA",
+  "license": "Apache-2.0",
+  "service_submission_performed": false
+}

@@ -1,0 +1,42 @@
+{
+  "parent_private_revision": "ce8364a2f1b17ba40b8536d79f2d37656095470d",
+  "copied_sources": [
+    {
+      "source": "lean-modern/Chapter02.lean",
+      "destination": "Chapter02.lean",
+      "sha256": "3019ef1caad4ab531143bd937fae56812bb9959a658bbe7368b5d5c761cc08af",
+      "byte_identical": true
+    },
+    {
+      "source": "lean-modern/Chapter05.lean",
+      "destination": "Chapter05.lean",
+      "sha256": "28d89d36da70231a2ae011646a221392b6ee1b420515c8967a8951010f1a9919",
+      "byte_identical": true
+    },
+    {
+      "source": "lean-modern/Chapter05QuadraticAnalytic.lean",
+      "destination": "Chapter05QuadraticAnalytic.lean",
+      "sha256": "f84d2cb73536b750d23f3969b3bff950ed0c1515586ca534566744780d55f5a9",
+      "byte_identical": true
+    },
+    {
+      "source": "lean-modern/Chapter05QuadraticScale.lean",
+      "destination": "Chapter05QuadraticScale.lean",
+      "sha256": "f86bf9075efc68b4f6b0c5826d98b2cdb09ab9327e7138cfd626d47dce4dbb0c",
+      "byte_identical": true
+    }
+  ],
+  "scientific_acceptance": "formal/CH05-quadratic-safe-scale-certificate.md",
+  "modern_migration_acceptance": "audit/lean-completion/PROJECT-S225/FINAL-TECHNICAL-QUALIFICATION.json",
+  "wrapper_statement_policy": "Exact accepted theorem types; only exported names change. Independent Challenge imports Mathlib only and inlines the relevant mathematical definitions. Solution imports copied full proofs, never Challenge.",
+  "scope": "For globally convex C² real-valued f on the full joint real coordinate space, arbitrary anchor a and retained set B, the explicit sufficient scale is min(1,2*infimum of the positive-curvature ratio range), or 1 when that domain is empty. It lies in [0,1]; all nonnegative coefficients below it give tangent <= cut <= f and cut <= unit-scale Taylor cut on B. Derivatives are actual first/nested Frechet derivatives. B may retain domain/integer restrictions; a need not belong to B. Empty B and zero curvature are retained. No maximal/necessary/strictly-positive/computable scale, strict dominance, algorithmic return, master attainment, solver or performance claim is included.",
+  "new_scientific_credit": false,
+  "license": "Apache-2.0",
+  "metadata_refresh": {
+    "date": "2026-11-05",
+    "original_clean_export_commit": "69e243169d4eec7c6cf404cbe351c92c6aeeeac9",
+    "proof_inputs": "unchanged",
+    "licence_authority": "Owner decision of 3 November 2026 for project-owned proof code/tools/software documentation; third-party rights retained",
+    "service_submission": "not performed by metadata preparation"
+  }
+}

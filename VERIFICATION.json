@@ -1,0 +1,85 @@
+{
+  "state": "PASS_ACTUAL_BUILD_AXIOMS_SANDBOXED_COMPARATOR_BUNDLED_KERNELS",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "input_sha256": {
+    "Chapter05QuadraticAnalytic.lean": "f84d2cb73536b750d23f3969b3bff950ed0c1515586ca534566744780d55f5a9",
+    "comparator.json": "3d8eb47b9782bd2425298810888bc8dc36e4f6a7ed7f8cd5f8850ee98b210145",
+    "lake-manifest.json": "3625bd628d263c9f6ebd1d5476d07a11af20bed1f1eeca244091b0750c5df71f",
+    "Chapter05QuadraticScale.lean": "f86bf9075efc68b4f6b0c5826d98b2cdb09ab9327e7138cfd626d47dce4dbb0c",
+    "Solution.lean": "2ca959934eb61d54aa456757808336d550547f2d78e7a281681bd390132a2400",
+    "Chapter02.lean": "3019ef1caad4ab531143bd937fae56812bb9959a658bbe7368b5d5c761cc08af",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "Chapter05.lean": "28d89d36da70231a2ae011646a221392b6ee1b420515c8967a8951010f1a9919",
+    "Challenge.lean": "9983760d7ec1ac0ad78e765cc4ff8e331c1fc7e829335d145a077a42f8933a29",
+    "AxiomAudit.lean": "25ed04bc60738dba60b1b120d35fff7923cdbaa49bdff4dedcd837fd3fc040ba",
+    "lakefile.toml": "79e1bb1588fa043cc84a06cce57d82d177dd86cc5e2ae38b70c3a5cf3e48c2cc"
+  },
+  "steps": [
+    {
+      "name": "source-format",
+      "argv": [
+        "python3",
+        "scripts/check-lean-sources.py"
+      ],
+      "started_utc": "2026-11-01T16:36:08.333514+00:00",
+      "elapsed_seconds": 0.03564391500549391,
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build",
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "started_utc": "2026-11-01T16:36:08.369281+00:00",
+      "elapsed_seconds": 3.0895024220080813,
+      "exit_code": 0,
+      "stdout_sha256": "063a4aae3dba7270aa3cfd39eda218239be9442951b2fe91d3a7da2ef8eb2436",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "axioms",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "AxiomAudit.lean"
+      ],
+      "started_utc": "2026-11-01T16:36:11.458935+00:00",
+      "elapsed_seconds": 2.10000510700047,
+      "exit_code": 0,
+      "stdout_sha256": "f90731ca90c2179378480976167774db87013f9a4b9c02066cf072e1268920dc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "comparator",
+      "argv": [
+        "lake",
+        "comparator",
+        "--config",
+        "/home/bernalde/repos/thesis_ai_remake/audit/lean-completion/PROJECT-S230/quadratic-verification06/comparator-local.json"
+      ],
+      "started_utc": "2026-11-01T16:36:13.559340+00:00",
+      "elapsed_seconds": 66.23100593299023,
+      "exit_code": 0,
+      "stdout_sha256": "7842f51e622968b7d907e1a8aa816cc2efb862acb927aacc12c40354c7e42e70",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "no_service_submission": true,
+  "upstream_cache": "Matching pinned Mathlib/dependency objects may be reused; package sources build independently.",
+  "solution_axioms": {
+    "PalomarQuadratic.solution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "packaging_status": "LOCAL_MECHANICALLY_VERIFIED_LICENSE_PENDING",
+  "evidence_origin": "PROJECT-S230/quadratic-verification06",
+  "template_release_license_check": "HELD_PENDING_AUTHOR_LICENSE_DECISION",
+  "public_release_approved": false
+}

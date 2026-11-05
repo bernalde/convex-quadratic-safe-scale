@@ -1,0 +1,111 @@
+version: v0.4
+project:
+  name: Clipped sufficient scales for convex quadratic cuts
+  description: A clipped sufficient scale for convex C² quadratic cuts. Global ambient convexity
+    and C² regularity are required. The anchor need not lie in B. The scale is not claimed maximal,
+    positive or computable.
+  authors:
+  - David E. Bernal Neira
+  responsible_maintainers:
+  - David E. Bernal Neira
+  license: Apache-2.0
+classification:
+  arxiv:
+  - math.OC
+  msc2020:
+  - 90C30
+  - 90C11
+sources:
+- title: Modern computational approaches to nonlinear discrete optimization and applications in
+    process systems engineering
+  authors:
+  - David E. Bernal Neira
+  type: other
+  relationship: adapts
+  location: Carnegie Mellon University, 2021; Chapter 5
+  note: Doctoral thesis, Carnegie Mellon University, 2021. Adapted, qualified retained result; no
+    assertion that all original claims or historical experiments are certified. Thesis material
+    is cited, not redistributed.
+- title: Improved quadratic cuts for convex mixed-integer nonlinear programs
+  id: doi:10.1016/j.compchemeng.2017.10.011
+  type: paper
+  relationship: background
+  note: Background/source relationship does not assert coauthor endorsement or redistribute the
+    article.
+status:
+  scope: For globally convex C² real-valued f on the full joint real coordinate space, arbitrary
+    anchor a and retained set B, the explicit sufficient scale is min(1,2*infimum of the positive-curvature
+    ratio range), or 1 when that domain is empty. It lies in [0,1]; all nonnegative coefficients
+    below it give tangent <= cut <= f and cut <= unit-scale Taylor cut on B. Derivatives are actual
+    first/nested Frechet derivatives. B may retain domain/integer restrictions; a need not belong
+    to B. Empty B and zero curvature are retained. No maximal/necessary/strictly-positive/computable
+    scale, strict dominance, algorithmic return, master attainment, solver or performance claim
+    is included.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: PalomarQuadratic.solution
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    literature_dependencies: []
+automation:
+  methods:
+  - method: agent
+    models: []
+    framework: Codex
+    tool_setup: Exact source reuse, independent statement surface construction, local Lean 4.35
+      build/axiom/Comparator checks; no new scientific or solver campaign.
+    cost:
+      wall_time: See local mechanical timings; complete prior development effort not attributed
+      spend_usd: Unknown; no attributable complete model/billing total
+      hardware: Local Linux/WSL Lean environment
+    prompting_notes: Preserve accepted hypotheses/definitions/types and all degenerate cases; do
+      not claim stronger algorithms, performance or maximality.
+  spend_usd: Unknown; no attributable complete total
+  notes: Prior proofs and qualified source evidence are reused at their recorded scopes. Codex automation
+    and AI assistance are disclosed; this is not a claim of exclusively manual proof authorship.
+    David E. Bernal Neira is the confirmed formalization author and responsible maintainer. Project-owned
+    proof code, tools and accompanying software documentation are licensed Apache-2.0 under the
+    owner decision of 3 November 2026 (the pilot also had an earlier package-specific grant). Complete
+    attributable tokens, costs and billing remain unknown. This metadata refresh performs no new
+    proof build or hosted service preflight.
+fidelity:
+  divergences: For globally convex C² real-valued f on the full joint real coordinate space, arbitrary
+    anchor a and retained set B, the explicit sufficient scale is min(1,2*infimum of the positive-curvature
+    ratio range), or 1 when that domain is empty. It lies in [0,1]; all nonnegative coefficients
+    below it give tangent <= cut <= f and cut <= unit-scale Taylor cut on B. Derivatives are actual
+    first/nested Frechet derivatives. B may retain domain/integer restrictions; a need not belong
+    to B. Empty B and zero curvature are retained. No maximal/necessary/strictly-positive/computable
+    scale, strict dominance, algorithmic return, master attainment, solver or performance claim
+    is included.
+review:
+  status: self-assessed
+  reviewers:
+  - Codex (packaging and exact-source comparison)
+  notes: 'The recorded prior local proof-input checks passed at their preserved exact source hashes:
+    build, transitive axioms, genuine sandboxed Comparator, and Lean/NanoDa/con-ron. VERIFICATION.json
+    is the unchanged historical receipt, not a newly issued hosted result. Existing source/translation
+    review and migration evidence retain their original scopes. This submission-stage metadata refresh
+    changes no Lean proof or advertised statement and provides no new scientific certification,
+    human peer review, Palomar editorial verdict or registration.'
+alignment:
+  namespace: PalomarQuadratic
+  statements:
+  - source: Clipped sufficient scales for convex quadratic cuts
+    lean: PalomarQuadratic.solution
+    module: Solution
+    status: adapted
+    note: Wrapper of the exact accepted type; full definitions are exposed in Challenge.
+acknowledgements: The cited mathematical source authors, original thesis collaborators, Lean/mathlib
+  contributors, and Codex automation. David E. Bernal Neira is the confirmed formalization author
+  and responsible maintainer, with AI assistance disclosed. Source attribution does not imply author
+  endorsement or relicense cited publications.
